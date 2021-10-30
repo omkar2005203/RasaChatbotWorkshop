@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>My Test Bot</title>
+<body>
+    <center><h1>
+        Test Page For Chatbot
+    </h1></center> 
+
+<div id="webchat"/>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.4.0/lib/index.min.js"></script>
+
+// Or you can replace latest with a specific version
+<script>
+  WebChat.default.init({
+     selector: "#webchat",
+     customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+     socketUrl: "http://localhost:5005",
+     //socketUrl: "http://93e0c3ee6249.ngrok.io",
+     socketPath: "/socket.io/",
+     title: "Omkar",
+     subtitle: "My Test Bot!",
+
+  })
+</script>
+</body>
+
+</html>

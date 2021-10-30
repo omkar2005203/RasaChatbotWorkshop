@@ -1,0 +1,94 @@
+version: "2.0"
+
+stories:
+
+- story: hello world
+  steps:
+  - intent: hello_world
+  - action: action_hello_world
+
+- story: hello world
+  steps:
+  - intent: start
+  - action: utter_greet
+
+- story: search_a_restaurant
+  steps:
+  - intent: search_restaurant
+  - action: action_search_restaurant
+
+
+
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: stress
+  steps:
+  - intent: ask_lower_stress
+  - action: utter_stress_info
+
+- story: diet
+  steps:
+  - intent: ask_eat_healthy
+  - action: utter_diet_info
+
+- story: exercise
+  steps:
+  - intent: ask_excercise
+  - action: utter_exercise_info
+
+- story: covid19 tracker
+  steps:
+  - intent: covid_update
+  - action: action_covid_tracker
+  
+
+- story: country name
+  steps:
+  - intent: name_country_entry
+  - action: action_name_country
+  - action: utter_name_country_info
+
+
+- story: weather report
+  steps:
+  - intent: ask_weather
+  - action: action_weather
+
+
+
+- story: news report
+  steps:
+  - intent: ask_news_sports
+  - action: action_for_sport
+
+
+  

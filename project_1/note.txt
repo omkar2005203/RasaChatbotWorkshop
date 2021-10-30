@@ -1,0 +1,18 @@
+
+
+
+
+command to enable api:
+
+rasa run --enable-api --cors "*"
+
+
+command to run ngrok server:
+ngrok http 5005
+
+https://ngrok.com/download
+
+
+command to run action server:
+run rasa action server
+

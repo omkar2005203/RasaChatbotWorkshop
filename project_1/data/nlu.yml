@@ -1,0 +1,193 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+
+- intent: start
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - welcome
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: hello_world
+  examples: |
+    - Hello World !
+    - hello 
+    - World !
+    - Hi world !
+    - yo World 
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_lower_stress
+  examples: |
+    - What do i do if i'm too stressed?
+    - How can I lower my stress level?
+    - What are some good ways to lower stress?
+    - What are some good ways to lower stress?
+    - What are good ways to relax?
+    - What are some things I can do to lower my stress?
+
+- intent: ask_eat_healthy
+  examples: |
+    - what's considered a healthy diet?
+    - what's considered a good diet?
+    - How do I follow a healthy diet?
+    - What's an example of healthy diet?
+    - How do i eat healthy?
+
+- intent: ask_excercise
+  examples: | 
+    - what's a good amount of exercise for someone in their thirties?
+    - How much exercise is recommended?
+    - Is walking once a day enough excercise?
+    - How much exercise should i do every day?
+    - How many times per week should i go to the gym?
+    - How much exercise should i be getting?
+
+
+- intent: search_restaurant
+  examples: |
+    - show me [indian](resto_type) restaurant
+    - show me [chinese](resto_type) restaurant
+    - show me [italian](resto_type) restaurant
+    - show me [american](resto_type) restaurant
+
+
+- intent: covid_update
+  examples: |
+    - show me covid update in [india](country_covid)
+    - show me covid update in [dubai](country_covid)
+    - show me covid update in [china](country_covid)
+    - covid 19 update in [maharashtra](state_covid)
+    - tell me about corona update in [goa](state_covid)
+    - covid 19 update in [karanataka](state_covid) state
+    - corona update in [bihar](state_covid)
+    - covid 19 in [himanchal pradesh](state_covid)
+    - corona in [west bengal](state_covid)
+
+
+
+- intent: name_country_entry
+  examples: |
+   - my name is [Omkar](name) and country is [india](country) 
+   - i am [Omkar](name) and my country is [U.K](country)
+   - my name is [Nikhil](name) and i live in [China](country) 
+   - my name is [Manish](name) and i from [New Zealand](country)
+   - name is [omkar](name) and i am from [Dubai](country)
+   - name is [demo](name) and i live in [America](country)
+
+
+
+- intent: ask_weather
+  examples: |
+    - what's the temperature in [pune](location)
+    - temperature in [chinchwad](location)
+    - what's weather in [mumbai](location)
+    - temperature in [chennai](location)
+    - weather in [delhi](location)
+    - weather in [pune](location)
+    - climate in [pune](location)
+    - whats temperature in [pune](location)
+    - temperature in [goa](location)
+    - climate in [pune](location)
+
+
+
+- intent: ask_news_sports
+  examples: |
+    - what's [cricket](sport) score
+    - [badminton](sport) score
+    - [tennis](sport) score
+    - what's [javelin](sport) score
+    - what's [hockey](sport) score
